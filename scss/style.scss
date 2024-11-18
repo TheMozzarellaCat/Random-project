@@ -7,18 +7,19 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/images/SimpleShiny.svg);
+    img{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
     .game-container{
         display: grid;
         grid-template-columns: repeat(4, 20vh);
         gap: 10px;
-        img{
-            height: 100vh;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+    
         .tile{
             width: 20vh;
             height: 20vh;
