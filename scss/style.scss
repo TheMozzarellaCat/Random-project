@@ -3,15 +3,12 @@ body{
     margin: 0;
     padding: 0;
     user-select: none;
-}
-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     height: 100vh;
     width: 100%;
-}
+    background-image: url(/images/SimpleShiny.svg);
     .game-container{
         display: grid;
         grid-template-columns: repeat(4, 20vh);
@@ -93,3 +90,4 @@ img{
             
         }
     }
+}
