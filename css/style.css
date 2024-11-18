@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+  background-image: url(/images/Simple\ Shiny.svg);
+}
+body .game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 20vh);
+  gap: 10px;
+}
+body .game-container .tile {
+  width: 20vh;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  position: relative;
+  box-shadow: 0px 0px 23px -1px rgb(66, 68, 90);
+}
+body .game-container .flipped {
+  transform: rotateY(180deg);
+}
+body .game-container .front, body .game-container .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+body .game-container .front {
+  background-color: #ffecd1;
+  transform: rotateY(180deg);
+  color: black;
+}
+body .game-container .front img {
+  height: 15vh;
+  width: 14vh;
+}
+body .game-container .back {
+  background-color: #e9c46a;
+}
+body .won-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.304);
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+body .won-container button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: #eeeeef;
+  box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #d6d6e7;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+body .won-container button :hover {
+  box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+body .won-container button :active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=style.css.map */
