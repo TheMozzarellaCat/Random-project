@@ -2,13 +2,16 @@
 body{
     margin: 0;
     padding: 0;
+}
+img{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     user-select: none;
     background-image: url(/images/SimpleShiny.svg);
-
+}
     .game-container{
         display: grid;
         grid-template-columns: repeat(4, 20vh);
@@ -90,5 +93,3 @@ body{
             
         }
     }
-    
-}
