@@ -6,7 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   user-select: none;
-  background-image: url(images/Simple\ Shiny.svg);
+  background-image: url(/images/Simple\ Shiny.svg);
 }
 body .game-container {
   display: grid;
