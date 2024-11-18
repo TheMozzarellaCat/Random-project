@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
   height: 100vh;
   width: 100%;
-  user-select: none;
 }
 
 .game-container {
