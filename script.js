@@ -2,14 +2,14 @@ const gameContainer = document.querySelector(".game-container")
 const gameWon = document.querySelector(".won-container")
 
 const tileIcons = [
-        '/images/dropbox.png',
-        '/images/pinterest.png',
-        '/images/facebook.png',
-        '/images/instagram.png',
-        '/images/github.png',
-        '/images/messenger.png',
-        '/images/twitter.png',
-        '/images/whatsapp.png']
+        'images/dropbox.png',
+        'images/pinterest.png',
+        'images/facebook.png',
+        'images/instagram.png',
+        'images/github.png',
+        'images/messenger.png',
+        'images/twitter.png',
+        'images/whatsapp.png']
 
 let tiles = []
 let flippedTiles = []
